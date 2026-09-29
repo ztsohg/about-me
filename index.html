@@ -1,248 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ztsohg</title>
-    <link rel="icon" type="image/png" href="Notion Studios Logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ztsohg</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
-
-<!-- Background layers -->
-<div class="orb orb-1"></div>
-<div class="orb orb-2"></div>
-<div class="orb orb-3"></div>
-<canvas id="bg-canvas"></canvas>
-
-<div class="theme-toggle">
-    <button id="theme-switcher"><i class="fas fa-moon"></i></button>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="index.html">ztsohg</a>
+<nav>
+<a href="index.html" aria-current="page">Home</a>
+<a href="about_me.html" >About</a>
+<a href="index.html#projects">Projects</a>
+<a href="index.html#skills">Skills</a>
+<a href="index.html#contact">Contact</a>
+<button id="theme" type="button" aria-label="Toggle light and dark theme">Theme</button>
+</nav>
+</div></header>
+<main>
+<div class="wrap">
+<div class="hero">
+<p class="role">Roblox developer</p>
+<h1>Hi, I&rsquo;m ztsohg.</h1>
+<p>I create UI designs and visual effects for Roblox experiences that players remember.</p>
+<div class="actions"><a class="btn solid" href="#projects">See projects</a><a class="btn" href="#contact">Contact</a></div>
+</div>
 </div>
 
-<header>
-    <div class="navbar">
-        <div class="logo">ztsohg</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about_me.html">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-</header>
-
-<section class="hero">
-    <div class="container">
-        <div class="hero-inner">
-            <span class="hero-eyebrow">Roblox Developer</span>
-            <h1>Hi, I'm<br><span class="name-grad">ztsohg</span></h1>
-            <p class="hero-desc">I create cool UI designs and beautiful Visual Effects for Roblox experiences that players remember.</p>
-            <div class="hero-actions">
-                <a href="#projects" class="btn btn-primary"><i class="fas fa-gamepad"></i> See Projects</a>
-                <a href="#contact" class="btn btn-ghost"><i class="fas fa-paper-plane"></i> Contact</a>
-            </div>
-        </div>
-    </div>
-    <div class="hero-grid"></div>
+<section id="about"><div class="wrap"><h2>About</h2></div>
+<div class="wrap">
+<p>I&rsquo;m a Roblox developer focused on creating cool UI designs and beautiful Visual Effects.</p>
+<p>Currently working on multiple projects, from horror games to incremental RNG mechanics. Always open to new collaborations.</p>
+<div class="about-grid"><img src="Notion%20Studios%20Logo.png" alt="Notion Studios logo"><p>Notion Studios</p></div>
+</div>
 </section>
 
-<section class="section" id="about">
-    <div class="container">
-        <div class="info-card">
-            <div class="profile-img">
-                <div class="avatar-wrap">
-                    <img src="Notion Studios Logo.png" alt="Notion Studios">
-                </div>
-            </div>
-            <div class="profile-info">
-                <h2>Shortly about me</h2>
-                <p>I'm a Roblox developer focused on creating cool UI designs and beautiful Visual Effects.</p>
-                <p>Currently working on multiple projects varying from horror games to incremental RNG mechanics. Always open to new collaborations.</p>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>ztsohgbusiness@gmail.com</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<section id="projects"><div class="wrap">
+<h2>Projects</h2>
+<h3 class="sub">Currently working on</h3>
+<ul class="list">
+<li><h3>Stealth Arena</h3><p>Hide &amp; Seek shooter game. Ghosts hide from Hunters.</p><div class="meta"><span>2 devs</span><span>Lead Developer</span></div></li>
+<li><h3>Soccer Legends</h3><p>A Tower Defense game based on the anime &ldquo;Blue Lock&rdquo;.</p><div class="meta"><span>3 devs</span><span>Lead Developer</span></div></li>
+<li><h3>Sell Fruits!</h3><p>Sell fruits, berries and more to build the biggest factory possible.</p><div class="meta"><span>1 dev</span><span>Lead Developer</span></div></li>
+</ul>
+<h3 class="sub">Past work</h3>
+<ul class="list">
+<li><h3>Infinite Incremental</h3><p>An incremental game made by Infinity_LightOfDark.</p></li>
+<li><h3>Ore Mining Incremental</h3><p>An ore mining game made by Infinity_LightOfDark.</p></li>
+</ul>
+</div></section>
 
-<section class="section" id="projects">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-label">// work</span>
-            <h2 class="section-title">Currently Working On</h2>
-        </div>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-icon"><i class="fas fa-laptop"></i></div>
-                <h3>Stealth Arena</h3>
-                <p>Hide & Seek shooter game. Ghosts hide from Hunters.</p>
-                <div class="project-tags">
-                    <span class="tag">2 devs</span>
-                    <span class="tag role">Lead Developer</span>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-icon"><i class="fas fa-laptop"></i></div>
-                <h3>Soccer Legends</h3>
-                <p>A Tower Defense game based on anime "Blue Lock".</p>
-                <div class="project-tags">
-                    <span class="tag">3 devs</span>
-                    <span class="tag role">Lead Developer</span>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-icon"><i class="fas fa-laptop"></i></div>
-                <h3>Sell Fruits!</h3>
-                <p>Sell different fruits/berries/etc and make the BIGGEST Factory possible!</p>
-                <div class="project-tags">
-                    <span class="tag">1 dev</span>
-                    <span class="tag role">Lead Developer</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<section id="skills"><div class="wrap">
+<h2>Skills</h2>
+<ul class="list">
+<li><h3>UI design and VFX</h3><p>Polished Roblox UI and visual effects that make games feel immersive.</p></li>
+<li><h3>Scripting</h3><p>Luau for Roblox.</p></li>
+</ul>
+</div></section>
 
-<section class="section" style="padding-top:10px">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-label">// past</span>
-            <h2 class="section-title">Games I've Worked On</h2>
-        </div>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-icon"><i class="fas fa-chart-line"></i></div>
-                <h3>Infinite Incremental</h3>
-                <p>An incremental game made by Infinity_LightOfDark.</p>
-            </div>
-            <div class="project-card">
-                <div class="project-icon"><i class="fas fa-mountain"></i></div>
-                <h3>Ore Mining Incremental</h3>
-                <p>An ore mining game made by Infinity_LightOfDark.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section" id="skills">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-label">// skills</span>
-            <h2 class="section-title">What I Do</h2>
-        </div>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fas fa-palette"></i></div>
-                <h3>UI Design + VFX</h3>
-                <p>Making polished Roblox UI and visual effects that enhance player immersion.</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fas fa-code"></i></div>
-                <h3>Scripting</h3>
-                <p>Luau for Roblox.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<footer id="contact">
-    <div class="container">
-        <div class="footer-inner">
-            <h2>Let's Connect</h2>
-            <p>Open for collaborations or work contracts.</p>
-            <div class="social-links">
-                <a href="https://x.com/@ztsohg_dev" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://youtube.com/@ztsohG" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="https://github.com/ztsohg" target="_blank"><i class="fab fa-github"></i></a>
-                <span style="position:relative;display:inline-block;">
-                    <a href="#" id="discord-link"><i class="fab fa-discord"></i></a>
-                    <span class="copied-toast" id="copied-toast">Copied!</span>
-                </span>
-            </div>
-            <p class="copyright">&copy; 2026 ztsohg. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
-
+<section id="contact"><div class="wrap">
+<h2>Let&rsquo;s connect</h2>
+<p>Open to collaborations and work contracts.</p>
+<div class="actions"><a class="btn solid" href="mailto:ztsohgbusiness@gmail.com">ztsohgbusiness@gmail.com</a><button class="btn" id="copy" type="button" data-email="ztsohgbusiness@gmail.com">Copy email</button></div>
+<div class="links"><a href="https://x.com/ztsohg_dev">X</a><a href="https://youtube.com/@ztsohG">YouTube</a><a href="https://github.com/ztsohg">GitHub</a></div>
+</div></section>
+</main>
+<footer><div class="wrap">&copy; 2026 ztsohg. All rights reserved.</div></footer>
 <script>
-    // Theme
-    const switcher = document.getElementById('theme-switcher');
-    const icon = switcher.querySelector('i');
-    if (localStorage.getItem('theme') === 'light') {
-        document.body.classList.add('light-theme');
-        icon.classList.replace('fa-moon','fa-sun');
-    }
-    switcher.addEventListener('click', () => {
-        document.body.classList.toggle('light-theme');
-        const isLight = document.body.classList.contains('light-theme');
-        icon.classList.replace(isLight ? 'fa-moon' : 'fa-sun', isLight ? 'fa-sun' : 'fa-moon');
-        localStorage.setItem('theme', isLight ? 'light' : 'dark');
-    });
-
-    // Discord copy
-    document.getElementById('discord-link').addEventListener('click', e => {
-        e.preventDefault();
-        navigator.clipboard.writeText('tshg').then(() => {
-            const toast = document.getElementById('copied-toast');
-            toast.classList.add('show');
-            setTimeout(() => toast.classList.remove('show'), 2000);
-        });
-    });
-
-    // Particle canvas
-    const canvas = document.getElementById('bg-canvas');
-    const ctx = canvas.getContext('2d');
-    let particles = [];
-
-    function resize() {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-    }
-    resize();
-    window.addEventListener('resize', resize);
-
-    function randomBetween(a, b) { return a + Math.random() * (b - a); }
-
-    const COLORS = ['120,80,255', '0,229,255', '255,80,168'];
-
-    for (let i = 0; i < 55; i++) {
-        particles.push({
-            x: randomBetween(0, window.innerWidth),
-            y: randomBetween(0, window.innerHeight),
-            r: randomBetween(1, 2.5),
-            color: COLORS[Math.floor(Math.random() * COLORS.length)],
-            speedX: randomBetween(-0.15, 0.15),
-            speedY: randomBetween(-0.3, -0.08),
-            opacity: randomBetween(0.1, 0.5),
-            pulse: randomBetween(0, Math.PI * 2),
-            pulseSpeed: randomBetween(0.005, 0.015)
-        });
-    }
-
-    function animate() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        particles.forEach(p => {
-            p.pulse += p.pulseSpeed;
-            const alpha = p.opacity * (0.6 + 0.4 * Math.sin(p.pulse));
-            ctx.beginPath();
-            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-            ctx.fillStyle = `rgba(${p.color},${alpha})`;
-            ctx.fill();
-            p.x += p.speedX;
-            p.y += p.speedY;
-            if (p.y < -10) { p.y = canvas.height + 10; p.x = randomBetween(0, canvas.width); }
-            if (p.x < -10) p.x = canvas.width + 10;
-            if (p.x > canvas.width + 10) p.x = -10;
-        });
-        requestAnimationFrame(animate);
-    }
-    animate();
+(function(){
+  var r=document.documentElement;
+  function dark(){return r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches}
+  document.getElementById("theme").onclick=function(){
+    var n=dark()?"light":"dark";r.dataset.theme=n;
+    try{localStorage.setItem("theme",n)}catch(e){}
+  };
+  var c=document.getElementById("copy");
+  if(c)c.onclick=function(){
+    var m=c.dataset.email;
+    (navigator.clipboard?navigator.clipboard.writeText(m):Promise.reject()).then(function(){
+      c.textContent="Copied";setTimeout(function(){c.textContent="Copy email"},1800);
+    }).catch(function(){location.href="mailto:"+m});
+  };
+})();
 </script>
 </body>
 </html>

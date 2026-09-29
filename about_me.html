@@ -1,190 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ztsohg | About</title>
-    <link rel="icon" type="image/png" href="Notion Studios Logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | ztsohg</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
-
-<!-- Background layers -->
-<div class="orb orb-1"></div>
-<div class="orb orb-2"></div>
-<div class="orb orb-3"></div>
-<canvas id="bg-canvas"></canvas>
-
-<div class="theme-toggle">
-    <button id="theme-switcher"><i class="fas fa-moon"></i></button>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="index.html">ztsohg</a>
+<nav>
+<a href="index.html" >Home</a>
+<a href="about_me.html" aria-current="page">About</a>
+<a href="index.html#projects">Projects</a>
+<a href="index.html#skills">Skills</a>
+<a href="index.html#contact">Contact</a>
+<button id="theme" type="button" aria-label="Toggle light and dark theme">Theme</button>
+</nav>
+</div></header>
+<main>
+<div class="wrap"><div class="hero"><p class="role">About</p><h1>ztsohg</h1></div></div>
+<section style="border-top:0;padding-top:0">
+<div class="wrap">
+<p>I&rsquo;m a Roblox developer focused on creating cool UI designs and beautiful Visual Effects.</p>
+<p>Currently working on multiple projects, from horror games to incremental RNG mechanics. Always open to new collaborations.</p>
+<div class="about-grid"><img src="Notion%20Studios%20Logo.png" alt="Notion Studios logo"><p>Notion Studios</p></div>
 </div>
-
-<header>
-    <div class="navbar">
-        <div class="logo">ztsohg</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about_me.html">About</a></li>
-            <li><a href="index.html#projects">Projects</a></li>
-            <li><a href="index.html#skills">Skills</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-    </div>
-</header>
-
-<section class="section">
-    <div class="container">
-        <div class="info-card">
-            <div class="profile-img">
-                <div class="avatar-wrap">
-                    <img src="Notion Studios Logo.png" alt="Notion Studios">
-                </div>
-            </div>
-            <div class="profile-info">
-                <h2>About Me</h2>
-
-                <div class="about-section">
-                    <h2><i class="fas fa-user"></i> Personal Info</h2>
-                    <div class="info-grid">
-                        <div class="info-item"><strong>Name</strong><span>Sen / ztsohg</span></div>
-                        <div class="info-item"><strong>Age</strong><span>16</span></div>
-                        <div class="info-item"><strong>Country</strong><span>Russia</span></div>
-                        <div class="info-item"><strong>Languages</strong><span>Russian, English, Polish</span></div>
-                        <div class="info-item"><strong>Focus</strong><span>UI Design & VFX</span></div>
-                        <div class="info-item"><strong>Gender</strong><span>Male</span></div>
-                    </div>
-                </div>
-
-                <div class="about-section">
-                    <h2><i class="fas fa-headphones"></i> Favorite Artists</h2>
-                    <div class="music-grid">
-                        <div class="music-item"><i class="fas fa-music"></i><span>dope17</span></div>
-                        <div class="music-item"><i class="fas fa-music"></i><span>FORTUNA 812</span></div>
-                        <div class="music-item"><i class="fas fa-music"></i><span>KRISTIEE</span></div>
-                        <div class="music-item"><i class="fas fa-music"></i><span>whitek3d</span></div>
-                        <div class="music-item"><i class="fas fa-music"></i><span>Locked23</span></div>
-                    </div>
-                </div>
-
-                <div class="about-section">
-                    <h2><i class="fas fa-gamepad"></i> Favorite Games</h2>
-                    <div class="games-grid">
-                        <div class="game-item"><i class="fas fa-dice"></i><div><strong>Dishonored</strong><span>Great storyline</span></div></div>
-                        <div class="game-item"><i class="fas fa-dice"></i><div><strong>Dying Light</strong><span>Parkour mechanics</span></div></div>
-                        <div class="game-item"><i class="fas fa-dice"></i><div><strong>PEAK</strong><span>Fun gameplay</span></div></div>
-                        <div class="game-item"><i class="fas fa-dice"></i><div><strong>Half-Life 2</strong><span>Great storyline</span></div></div>
-                    </div>
-                </div>
-
-                <div class="about-section">
-                    <h2><i class="fas fa-star"></i> Other Interests</h2>
-                    <div class="interests-grid">
-                        <div class="interest-item"><i class="fas fa-music"></i><span>Making Music</span></div>
-                        <div class="interest-item"><i class="fas fa-lightbulb"></i><span>Game Design</span></div>
-                    </div>
-                </div>
-
-                <div class="contact-info">
-                    <div class="contact-item"><i class="fas fa-envelope"></i><span>ztsohgbusiness@gmail.com</span></div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="wrap" style="margin-top:2rem"><a class="btn" href="index.html#contact">Get in touch</a></div>
 </section>
-
-<footer id="contact">
-    <div class="container">
-        <div class="footer-inner">
-            <h2>Let's Connect</h2>
-            <p>Open for collaborations or work contracts.</p>
-            <div class="social-links">
-                <a href="https://x.com/@ztsohg_dev" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://youtube.com/@ztsohG" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="https://github.com/ztsohg" target="_blank"><i class="fab fa-github"></i></a>
-                <span style="position:relative;display:inline-block;">
-                    <a href="#" id="discord-link"><i class="fab fa-discord"></i></a>
-                    <span class="copied-toast" id="copied-toast">Copied!</span>
-                </span>
-            </div>
-            <p class="copyright">&copy; 2026 ztsohg. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
-
+</main>
+<footer><div class="wrap">&copy; 2026 ztsohg. All rights reserved.</div></footer>
 <script>
-    // Theme
-    const switcher = document.getElementById('theme-switcher');
-    const icon = switcher.querySelector('i');
-    if (localStorage.getItem('theme') === 'light') {
-        document.body.classList.add('light-theme');
-        icon.classList.replace('fa-moon','fa-sun');
-    }
-    switcher.addEventListener('click', () => {
-        document.body.classList.toggle('light-theme');
-        const isLight = document.body.classList.contains('light-theme');
-        icon.classList.replace(isLight ? 'fa-moon' : 'fa-sun', isLight ? 'fa-sun' : 'fa-moon');
-        localStorage.setItem('theme', isLight ? 'light' : 'dark');
-    });
-
-    // Discord copy
-    document.getElementById('discord-link').addEventListener('click', e => {
-        e.preventDefault();
-        navigator.clipboard.writeText('tshg').then(() => {
-            const toast = document.getElementById('copied-toast');
-            toast.classList.add('show');
-            setTimeout(() => toast.classList.remove('show'), 2000);
-        });
-    });
-
-    // Particle canvas
-    const canvas = document.getElementById('bg-canvas');
-    const ctx = canvas.getContext('2d');
-    let particles = [];
-
-    function resize() {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-    }
-    resize();
-    window.addEventListener('resize', resize);
-
-    function randomBetween(a, b) { return a + Math.random() * (b - a); }
-
-    const COLORS = ['120,80,255', '0,229,255', '255,80,168'];
-
-    for (let i = 0; i < 55; i++) {
-        particles.push({
-            x: randomBetween(0, window.innerWidth),
-            y: randomBetween(0, window.innerHeight),
-            r: randomBetween(1, 2.5),
-            color: COLORS[Math.floor(Math.random() * COLORS.length)],
-            speedX: randomBetween(-0.15, 0.15),
-            speedY: randomBetween(-0.3, -0.08),
-            opacity: randomBetween(0.1, 0.5),
-            pulse: randomBetween(0, Math.PI * 2),
-            pulseSpeed: randomBetween(0.005, 0.015)
-        });
-    }
-
-    function animate() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        particles.forEach(p => {
-            p.pulse += p.pulseSpeed;
-            const alpha = p.opacity * (0.6 + 0.4 * Math.sin(p.pulse));
-            ctx.beginPath();
-            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-            ctx.fillStyle = `rgba(${p.color},${alpha})`;
-            ctx.fill();
-            p.x += p.speedX;
-            p.y += p.speedY;
-            if (p.y < -10) { p.y = canvas.height + 10; p.x = randomBetween(0, canvas.width); }
-            if (p.x < -10) p.x = canvas.width + 10;
-            if (p.x > canvas.width + 10) p.x = -10;
-        });
-        requestAnimationFrame(animate);
-    }
-    animate();
+(function(){
+  var r=document.documentElement;
+  function dark(){return r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches}
+  document.getElementById("theme").onclick=function(){
+    var n=dark()?"light":"dark";r.dataset.theme=n;
+    try{localStorage.setItem("theme",n)}catch(e){}
+  };
+  var c=document.getElementById("copy");
+  if(c)c.onclick=function(){
+    var m=c.dataset.email;
+    (navigator.clipboard?navigator.clipboard.writeText(m):Promise.reject()).then(function(){
+      c.textContent="Copied";setTimeout(function(){c.textContent="Copy email"},1800);
+    }).catch(function(){location.href="mailto:"+m});
+  };
+})();
 </script>
 </body>
 </html>
